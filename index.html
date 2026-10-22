@@ -3,52 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MonSiteWeb GID</title>
+    <title>Département GID</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="bandeau-octobre-rose">
+         <strong>Octobre Rose :</strong> Le département GID soutient la sensibilisation et la lutte contre le cancer du sein.
+    </div>
+
     <header>
         <div class="logo-slogan">
-            <img src="image/GID.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
-            <div class="texte-logo">
-                <span class="nom-site">MonSiteWeb GID</span>
-                <span class="slogan">Octobre rose</span>
-            </div>
+            <img src="image/ETUDIANTS.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+            <span class="slogan-texte">L'innovation logicielle au service de la décision</span>
         </div>
-        <nav class="menu-boites">
-            <a href="#accueil" class="boite-menu">Accueil</a>
-            <a href="#structure" class="boite-menu">À propos</a>
-            <a href="#css" class="boite-menu">Services</a>
-            <a href="#contact" class="boite-menu">Contact</a>
+        <nav class="nav-menu">
+            <a href="#accueil" class="nav-btn">Accueil</a>
+            <a href="#poles" class="nav-btn">Formations</a>
+            <a href="#contact" class="nav-btn">Contact</a>
+            <a href="#candidater" class="nav-btn btn-special">Candidater</a>
         </nav>
     </header>
 
     <main>
 
-        <div class="banniere" id="accueil">
-            <h1>GID</h1>
-            <p>Génie Informatique et Décisionnel</p>
-        </div>
+        <section class="section-hero" id="accueil">
+            <img src="image/GID.jpg" alt="Photo Étudiants GID" class="img-fond-gid">
+            <div class="hero-overlay">
+                <h1>Gid</h1>
+            </div>
+        </section>
 
-        <div class="conteneur-cartes">
-            <section class="carte" id="structure">
-                <h2>HTML5 et Structure</h2>
-                <p>Apprentissage des balises sémantiques et de l'architecture d'une page web.</p>
-            </section>
-            <section class="carte" id="css">
-                <h2>CSS3 et Mise en page</h2>
-                <p>Utilisation de Flexbox, Grid et du responsive design pour adapter tous les écrans.</p>
-            </section>
-            <section class="carte">
-                <h2>Formulaires & Validation</h2>
-                <p>Conception et contrôle des saisies utilisateur avec les API natives et JavaScript.</p>
-            </section>
-        </div>
+        <section class="section-cartes" id="poles">
+            <div class="conteneur-cartes">
+
+                <article class="carte">
+                    <h3>Ingénierie des Données & BI</h3>
+                    <p class="carte-desc">Conception de bases de données avancées et modélisation décisionnelle.</p>
+                    <ul class="carte-liste">
+                        <li>Entrepôts de données (Data Warehouse)</li>
+                        <li>Analyse décisionnelle & ETL</li>
+                        <li>Tableaux de bord interactifs</li>
+                    </ul>
+                </article>
+
+                <article class="carte">
+                    <h3>Développement Web & Mobile</h3>
+                    <p class="carte-desc">Création d'applications distribuées et gestion d'architectures logicielles.</p>
+                    <ul class="carte-liste">
+                        <li>Architectures Web & APIs REST</li>
+                        <li>Applications mobiles modernes</li>
+                        <li>Sécurité des systèmes informatiques</li>
+                    </ul>
+                </article>
+
+                <article class="carte">
+                    <h3>Systèmes Décisionnels & IA</h3>
+                    <p class="carte-desc">Exploitation d'algorithmes intelligents pour l'optimisation des décisions.</p>
+                    <ul class="carte-liste">
+                        <li>Analyse prédictive & Statistiques</li>
+                        <li>Algorithmes d'optimisation</li>
+                        <li>Aide automatisée à la décision</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
     </main>
 
     <footer id="contact">
-        <p>© 2026 GID - MonSiteWeb | Tous droits réservés</p>
+        <h3>Département Génie Informatique & Décisionnel (GID)</h3>
+        <p>Université de Douala - Contact : contact@gid-univ.cm</p>
     </footer>
 
 </body>
