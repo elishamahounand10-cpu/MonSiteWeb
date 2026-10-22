@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MonSiteWeb</title>
+    <title>MonSiteWeb GID</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<!--Devoir fais par KOMBOU et MBOUTCHOM-->
 <body>
+
     <header>
-        <h1>Bienvenue sur MonSiteWeb</h1>
-        <nav>
-            <a href="#apropos">A propos</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+        <div class="logo-slogan">
+            <img src="image/GID.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+            <div class="texte-logo">
+                <span class="nom-site">MonSiteWeb GID</span>
+                <span class="slogan">Octobre rose</span>
+            </div>
+        </div>
+        <nav class="menu-boites">
+            <a href="#accueil" class="boite-menu">Accueil</a>
+            <a href="#structure" class="boite-menu">À propos</a>
+            <a href="#css" class="boite-menu">Services</a>
+            <a href="#contact" class="boite-menu">Contact</a>
         </nav>
     </header>
 
     <main>
-        <section id="apropos">
-            <h2>A propos</h2>
-            <p>Nous presentons ici notre projet et notre activite.</p>
-        </section>
-        <section id="services">
-            <h2>Nos services</h2>
-            <p>Creation web, accompagnement numerique et formation.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Ecrivez-nous : contact@example.com</p>
-        </section>
+
+        <div class="banniere" id="accueil">
+            <h1>GID</h1>
+            <p>Génie Informatique et Décisionnel</p>
+        </div>
+
+        <div class="conteneur-cartes">
+            <section class="carte" id="structure">
+                <h2>HTML5 et Structure</h2>
+                <p>Apprentissage des balises sémantiques et de l'architecture d'une page web.</p>
+            </section>
+            <section class="carte" id="css">
+                <h2>CSS3 et Mise en page</h2>
+                <p>Utilisation de Flexbox, Grid et du responsive design pour adapter tous les écrans.</p>
+            </section>
+            <section class="carte">
+                <h2>Formulaires & Validation</h2>
+                <p>Conception et contrôle des saisies utilisateur avec les API natives et JavaScript.</p>
+            </section>
+        </div>
     </main>
-    <footer><p>© 2026 MonSiteWeb</p></footer>
+
+    <footer id="contact">
+        <p>© 2026 GID - MonSiteWeb | Tous droits réservés</p>
+    </footer>
+
 </body>
 </html>
